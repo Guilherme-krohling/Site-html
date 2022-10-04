@@ -1,0 +1,15 @@
+
+
+
+perguntar para o arley:
+1° cores
+2° espaçamento nav
+3° footer mexe junto com a imagem
+4° quero que o index seja tamanho fixo q ele sempre fique 100% da tela em todos os aparelhos, ja as ostras telas tem que ter a barrinha para descer pq ela vai ter mais conteudo
+
+
+O que tenho para fazer :
+1- alinhar slide
+2- alinhar imagens e nomes e imagens
+3- aumentar fonte no pc
+

@@ -1,0 +1,476 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #424242;
+    height: auto;
+}
+
+header {
+    box-sizing: border-box;
+    height: 70px;
+    padding: 1rem;
+    background-color: #424242;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+hr {
+    border-color: black;
+}
+
+main {
+    /* background-color: rgb(128, 126, 126); */
+    background-color: #616161;
+    border-radius: 16px;
+    height: 80%;
+}
+
+header img {
+    /*tamanho do logo*/
+    width: 70px;
+    margin: auto;
+}
+
+a {
+    /*personalizaçao dos links*/
+    color: rgb(243, 59, 59);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#inicio #foto-inicio {
+    /*posição da foto sasuke vs naruto*/
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10%;
+}
+
+.rodape {
+    text-align: center;
+}
+
+.texto {
+    text-align: center;
+    font-size: 1.50rem;
+}
+.personagem-texto{
+    font-size: 1.50rem;
+
+}
+/* ------------------------------------------------hamburguer--------------------------------------------------------- */
+
+/* #menu {
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+} */
+
+#menu a {
+    display: block;
+    padding: 5%;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+#menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #424242;
+    height: 0px;
+    transition: .6s;
+    visibility: hidden;
+    overflow-y: hidden;
+    z-index: 10000;
+}
+
+#nav.active #menu {
+    height: 15vh;
+    visibility: visible;
+    overflow-y: auto;
+}
+
+#menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, .5);
+}
+
+#btn-mobile {
+    display: flex;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: .5rem;
+}
+
+#hamburguer {
+    border-top: 2px solid;
+    width: 20px;
+}
+
+#hamburguer::after,
+#hamburguer::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+}
+
+#nav.active #hamburguer {
+    border-top-color: transparent;
+}
+
+#nav.active #hamburguer::before {
+    transform: rotate(135deg);
+}
+
+#nav.active #hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
+}
+.index-botoes .index-uchiha .uchiha-index{
+    padding-top: 2rem;
+}
+/* ------------------------------------------------hamburguer--------------------------------------------------------- */
+
+@media (max-width:999px) {
+    .index-botoes {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+ 
+    .sasuke-sumiu {
+        display: none;
+    }
+
+    .slide {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 350px;
+        border-radius: 15px;
+    }
+
+    .texto {
+        padding-top: 1rem;
+    }
+
+    .slideshow-container {
+        padding-top: 2rem;
+    }
+
+    .index-botoes {
+        padding-top: 2rem;
+    }
+
+    /* alinnhando os personagens para celular */
+    .naruto {
+        text-align: center;
+    }
+
+    .sasuke {
+        text-align: center;
+    }
+
+    .sakura {
+        text-align: center;
+    }
+
+    .kakashi {
+        text-align: center;
+    }
+
+    .itachi {
+        text-align: center;
+    }
+
+    .neji {
+        text-align: center;
+    }
+
+    .minato {
+        text-align: center;
+    }
+
+    .madara {
+        text-align: center;
+    }
+
+    /* alinnhando os clãs para celular */
+    .uchiha {
+        text-align: center;
+    }
+    .hyuga {
+        text-align: center;
+    }
+    .uzumaki {
+        text-align: center;
+    }
+    .akimichi {
+        text-align: center;
+    }
+
+
+}
+
+@media (min-width:1000px) {
+
+    .index-botoes {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .slide {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 500px;
+        border-radius: 15px;
+    }
+
+    .texto {
+        padding-top: 10px;
+    }
+
+    .slideshow-container {
+        padding-top: 1rem;
+    }
+
+    .index-botoes {
+        padding-top: 1rem;
+    }
+    /* alinnhando os personagens para PC*/
+
+    .naruto{
+        text-align: center;
+
+    }
+
+    .naruto-pc {
+        display: flex;
+    }
+
+    .sasuke{
+        text-align: center;
+
+    }
+
+    .sasuke-pc {
+        display: flex;
+    }
+
+    .sakura{
+        text-align: center;
+
+    }
+
+    .sakura-pc {
+        display: flex;
+    }
+
+    .kakashi{
+        text-align: center;
+
+    }
+
+    .kakashi-pc {
+        display: flex;
+    }
+
+    .itachi{
+        text-align: center;
+
+    }
+
+    .itachi-pc {
+        display: flex;
+    }
+
+    .neji{
+        text-align: center;
+
+    }
+
+    .neji-pc {
+        display: flex;
+    }
+
+    .minato{
+        text-align: center;
+
+    }
+
+    .minato-pc {
+        display: flex;
+    }
+
+    .madara{
+        text-align: center;
+
+    }
+
+    .madara-pc {
+        display: flex;
+    }
+    /* alinnhando os clãs para PC*/
+
+    .uchiha{
+        text-align: center;
+    }
+
+    .uchiha-pc {
+        display: flex;
+    }
+    .hyuga{
+        text-align: center;
+    }
+
+    .hyuga-pc {
+        display: flex;
+    }
+    .uzumaki{
+        text-align: center;
+    }
+
+    .uzumaki-pc {
+        display: flex;
+    }
+    .akimichi{
+        text-align: center;
+    }
+
+    .akimichi-pc {
+        display: flex;
+    }
+
+
+
+}
+
+
+/* ------------------------------------------------Fotos que mudam--------------------------------------------------------- */
+
+.mySlides {
+    display: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* ------------------------------------------------PAGINA PERSONAGENS E CLAS--------------------------------------------------------- */
+div {
+    align-items: center;
+    /* border-bottom: 2px solid rgba(0,0,0,.5); */
+}
+
+.drop-personagens {
+    /*centraliza o menu*/
+    position: sticky;
+    display: flex;
+    justify-content: right;
+    text-decoration: none;
+}
+
+.dropdown-menu {
+    /* fonte, e faria o espaçamento aqui mas como so tem 1 entao nao precisa */
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+.dropdown-menu li {
+    /* tamanho do drop menu */
+    
+    width: 150px;
+    height: 50px;
+    list-style: none;
+}
+
+.dropdown-menu a {
+    display: block;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    transition: all .1s linear;
+}
+
+.dropdown-menu li:hover>a {
+    background-color: red;
+    color: rgb(255, 255, 255);
+}
+
+.dropdown-menu li:hover>.dropdown-submenu {
+    display: block;
+}
+
+.dropdown-submenu {
+    margin-top: 1px;
+    display: none;
+}
+
+.dropdown-submenu a {
+    background-color: #424242;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    font-size: .9rem;
+    /* border-left: 8px solid transparent; */
+}
+
+.dropdown-submenu li:hover>a {
+    border-left: 8px solid black;
+}
